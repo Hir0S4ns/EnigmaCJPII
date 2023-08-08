@@ -34,6 +34,7 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
+    margin-top: 5px; /* Espaçamento superior para o botão */
 }
 
 #feedback {
@@ -47,5 +48,23 @@ button {
 
 .phase-image {
     max-width: 100%;
-    height: auto;
+    height: 200vh;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+    height: 100vh; /* 100% da altura da viewport */
+}
+
+.container {
+    text-align: center;
+}
+
+.phase-image {
+    width: 500px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    margin: 5px auto; /* Centraliza horizontalmente e adiciona margem inferior */
 }
