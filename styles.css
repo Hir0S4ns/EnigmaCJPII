@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; /* Fundo preto */
+    color: white; /* Letras brancas */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #fff; /* Cor branca para o título */
+}
+
+p {
+    color: #ccc; /* Cor cinza claro para o texto */
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #0c580e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px; /* Espaçamento superior para o botão */
+}
+
+#feedback {
+    font-weight: bold;
+}
+
+/* Estilos adicionais para a imagem */
+.image-container {
+    margin-top: 20px;
+}
+
+.phase-image {
+    max-width: 100%;
+    height: 200vh;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 100%;
+    height: 100vh; /* 100% da altura da viewport */
+}
+
+.container {
+    text-align: center;
+}
+
+.phase-image {
+    width: 500px; /* Largura fixa */
+    height: 400px; /* Altura fixa */
+    margin: 5px auto; /* Centraliza horizontalmente e adiciona margem inferior */
+}
