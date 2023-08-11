@@ -18,6 +18,8 @@ const answers = [
     ["agosto", "Agosto"], 
     ["3 patos", "3"],
     ["1889"],
+    ["esquerda","Esquerda"],
+    ["peúntimo", "penultimo", "Penúltimo", "Penultimo"]
 ];
 
 const phaseImages = [
@@ -31,7 +33,9 @@ const phaseImages = [
     "imagens/musica.png",
     "imagens/agosto.png",
     "imagens/3patos.png",
-    "imagens/sudoku fake.png"
+    "imagens/sudoku fake.png",
+    "imagens/esquerda.png",
+    "imagens/penultimo",
 ];
 
 const logoImagePath = "imagens/logocjp.png"; // Path to the logo image
@@ -56,7 +60,9 @@ answerButton.addEventListener('click', () => {
       // Você pode exibir uma mensagem de conclusão ou fazer algo aqui
     }
   } else {
-    // Você pode exibir uma mensagem de resposta incorreta aqui
+    alert("Resposta incorreta! Você voltará para a fase 1.");
+    currentPhase = 0;
+    loadPhase(currentPhase);
   }
 
   answerInput.value = '';
@@ -65,9 +71,6 @@ answerButton.addEventListener('click', () => {
 function loadPhase(phaseIndex) {
   phaseImage.src = phaseImages[phaseIndex];
   logoImage.src = logoImagePath; // Update the logo image source for each phase
-}
-function loadPhase(phaseIndex) {
-  phaseImage.src = phaseImages[phaseIndex];
 
   // Verifica se é a fase 11 e adiciona a classe apropriada
   if (phaseIndex === 10) {
