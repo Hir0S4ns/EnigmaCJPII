@@ -66,3 +66,13 @@ function loadPhase(phaseIndex) {
   phaseImage.src = phaseImages[phaseIndex];
   logoImage.src = logoImagePath; // Update the logo image source for each phase
 }
+function loadPhase(phaseIndex) {
+  phaseImage.src = phaseImages[phaseIndex];
+
+  // Verifica se é a fase 11 e adiciona a classe apropriada
+  if (phaseIndex === 10) {
+    phaseImage.classList.add('phase11');
+  } else {
+    phaseImage.classList.remove('phase11');
+  }
+}
