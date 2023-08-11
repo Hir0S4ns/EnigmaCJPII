@@ -1,63 +1,68 @@
-const answers = ["pirâmide","video-game","antigo", "quinta-feira", "ferro", "musica", "agosto", "3 patos"];
+const introContainer = document.getElementById('intro-container');
+const startButton = document.getElementById('start-button');
+const gameContainer = document.getElementById('game-container');
+const phaseImage = document.getElementById('phase-image');
+const logoImage = document.getElementById('logo-image'); // Element for the logo image
+const answerInput = document.getElementById('answer-input');
+const answerButton = document.getElementById('answer-button');
 
-var phaseImages = [
-    "imagens/piramide.png",
-    "imagens/video game.png",
-    "imagens/nokia.png",
-    "imagens/quinta-feira.png",
-    "imagens/tiberio claudio cesar - ferro.png",
-    "imagens/musica.png",
-    "imagens/agosto.png",
-    "imagens/3patos.png"
-
-
+const answers = [
+    ["291"],
+    ["quinta-feira", "Quinta-feira", "quinta", "Quinta"],
+    ["pirâmide", "piramide", "Pirâmide"],
+    ["ferro", "Ferro"], 
+    ["video-game", "videogame", "Video-Game", "video game", "Video game", "Videogame"], 
+    ["6"],
+    ["antigo", "Antigo"], 
+    ["musica", "música", "Música", "música"],
+    ["agosto", "Agosto"], 
+    ["3 patos", "3"],
+    ["1889"],
 ];
 
-var currentPhase = 0;
+const phaseImages = [
+    "imagens/291.png",
+    "imagens/quinta-feira.png",
+    "imagens/piramide.png",
+    "imagens/ferro.png",
+    "imagens/video game.png",
+    "imagens/6.png",
+    "imagens/nokia.png",
+    "imagens/musica.png",
+    "imagens/agosto.png",
+    "imagens/3patos.png",
+    "imagens/sudoku fake.png"
+];
 
-function changePhaseImage() {
+const logoImagePath = "imagens/logocjp.png"; // Path to the logo image
+
+let currentPhase = 0;
+
+startButton.addEventListener('click', () => {
+  introContainer.style.display = 'none';
+  gameContainer.style.display = 'block';
+  loadPhase(currentPhase);
+});
+
+answerButton.addEventListener('click', () => {
+  const userAnswer = answerInput.value.toLowerCase();
+  const correctAnswers = answers[currentPhase];
+
+  if (correctAnswers.includes(userAnswer)) {
+    currentPhase++;
     if (currentPhase < phaseImages.length) {
-        var imageElement = document.getElementById("phaseImage");
-        imageElement.src = phaseImages[currentPhase];
-    }
-}
-
-function checkAnswer() {
-    const userAnswer = document.getElementById("answer").value.toLowerCase().trim();
-
-    if (userAnswer === answers[currentPhase]) {
-        currentPhase++;
-
-        if (currentPhase === answers.length) {
-            document.getElementById("feedback").innerText = "Parabéns, você completou o enigma!";
-            document.getElementById("answer").disabled = true;
-        } else {
-            document.getElementById("feedback").innerText = "Resposta correta! Avance para a próxima fase.";
-            document.getElementById("answer").value = "";
-            changePhaseImage();
-        }
+      loadPhase(currentPhase);
     } else {
-        document.getElementById("feedback").innerText = "Resposta incorreta, tente novamente.";
+      // Você pode exibir uma mensagem de conclusão ou fazer algo aqui
     }
+  } else {
+    // Você pode exibir uma mensagem de resposta incorreta aqui
+  }
+
+  answerInput.value = '';
+});
+
+function loadPhase(phaseIndex) {
+  phaseImage.src = phaseImages[phaseIndex];
+  logoImage.src = logoImagePath; // Update the logo image source for each phase
 }
-
-// Inicializar a imagem da primeira fase
-changePhaseImage();
-// ... (código anterior)
-
-function changePhaseImage() {
-    if (currentPhase < phaseImages.length) {
-        var imageElement = document.getElementById("phaseImage");
-        imageElement.src = phaseImages[currentPhase];
-
-        // Mostrar ou esconder o texto introdutório
-        var introText = document.getElementById("introText");
-        if (currentPhase === 0) {
-            introText.style.display = "block"; // Mostrar na primeira fase
-        } else {
-            introText.style.display = "none"; // Esconder nas próximas fases
-        }
-    }
-}
-
-// ... (código posterior)

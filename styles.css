@@ -1,70 +1,78 @@
 body {
+    background-color: black;
+    color: white;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: black; /* Fundo preto */
-    color: white; /* Letras brancas */
-}
-
-.container {
+    text-align: center;
+  }
+  
+  #intro-container, #game-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-}
-
-h1 {
-    color: #fff; /* Cor branca para o título */
-}
-
-p {
-    color: #ccc; /* Cor cinza claro para o texto */
-}
-
-input {
-    width: 50%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-button {
-    background-color: #0c580e;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 5px; /* Espaçamento superior para o botão */
-}
-
-#feedback {
-    font-weight: bold;
-}
-
-/* Estilos adicionais para a imagem */
-.image-container {
-    margin-top: 20px;
-}
-
-.phase-image {
-    max-width: 100%;
-    height: 200vh;
-}
-
-.image-container {
+  }
+  
+  #intro-container {
     display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    width: 100%;
-    height: 100vh; /* 100% da altura da viewport */
-}
-
-.container {
-    text-align: center;
-}
-
-.phase-image {
-    width: 500px; /* Largura fixa */
-    height: 400px; /* Altura fixa */
-    margin: 5px auto; /* Centraliza horizontalmente e adiciona margem inferior */
-}
+    flex-direction: column;
+  }
+  
+  #intro-container img, #phase-image {
+    width: 600px;
+    height: 400px;
+    object-fit: center;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 14px 28px; /* Aumente o tamanho dos botões */
+    font-size: 18px; /* Aumente o tamanho da fonte dos botões */
+    cursor: pointer;
+    background-color: green; /* Cor de fundo verde */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Espaço entre os botões */
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 20px; /* Aumente o tamanho da fonte da barra de resposta */
+    width: 40%; /* Faz a barra de resposta ocupar a largura disponível */
+    box-sizing: border-box;
+    margin-top: 10px; /* Espaço entre o texto e a barra de resposta */
+  }
+  
+  #game-container {
+    display: none;
+  }
+  
+  #logo-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+    height: auto;
+    z-index: 1;
+    margin-top: 10px; /* Espaço entre o logo e o botão de resposta */
+  }
+  /* Seu estilo existente */
+#response-text {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 10px; /* Espaço entre o texto e a imagem */
+  }
+  
+  /* Seu estilo existente */
+#response-text {
+    font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+    margin-top: 10px; /* Espaço entre o texto e a imagem */
+  }
+  
+  #answer-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Espaço entre a caixa de resposta e o container do botão */
+  }
+  
