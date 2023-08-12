@@ -96,4 +96,6 @@ input[type="text"] {
   width: 500px; /* Ajuste conforme necessário */
   height: auto; /* Mantém a proporção original */
 }
-
+#congratulations {
+color: rgb(231, 14, 43)
+}
