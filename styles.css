@@ -19,8 +19,8 @@ body {
 }
 
 #intro-container img {
-  width: 500px;
-  height: 300px;
+  width: 300px;
+  height: 200px;
   object-fit: auto;
   margin-bottom: 20px;
 }
@@ -99,6 +99,6 @@ input[type="text"] {
 
 /* No seu arquivo styles.css */
 #phase-image {
-  max-width: 40%; /* Ajusta a largura máxima da imagem */
-  height: 200px; /* Mantém a proporção da imagem */
+  max-width: 60%; /* Ajusta a largura máxima da imagem */
+  height: 400px; /* Mantém a proporção da imagem */
 }
