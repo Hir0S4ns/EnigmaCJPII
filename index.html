@@ -1,0 +1,30 @@
+
+Peço desculpas pelo erro. Parece que houve uma duplicação no código que pode ter causado a exibição de dois botões de resposta. Vou fornecer o código HTML corrigido para você:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enigma Game</title>
+<link rel="stylesheet" href="styles.css">
+<!-- Adicione o ícone aqui -->
+<link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<div id="intro-container">
+  <img src="imagens/introducao.png" alt="Introduction Image">
+  <button id="start-button">Começar</button>
+</div>
+<div id="game-container">
+  <img id="phase-image" src="" alt="Enigma Image">
+  <p id="response-text">Digite a resposta aqui:</p>
+  <input type="text" id="answer-input" class="response-input">
+  <button id="answer-button" class="response-button">Responder</button>
+  <p id="congratulations-text"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
