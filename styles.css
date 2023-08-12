@@ -19,8 +19,8 @@ body {
 }
 
 #intro-container img {
-  width: auto;
-  height: auto;
+  width: 300px;
+  height: 400px;
   object-fit: center;
   margin-bottom: 20px;
 }
@@ -81,7 +81,7 @@ input[type="text"] {
 
 /* Estilo específico para a imagem da fase 11 */
 #phase-image.phase11 {
-  width: 800px; /* Largura desejada para a fase 11 */
+  width: 600px; /* Largura desejada para a fase 11 */
   height: auto;
 }
 
@@ -100,5 +100,5 @@ input[type="text"] {
 /* No seu arquivo styles.css */
 #phase-image {
   max-width: 100%; /* Ajusta a largura máxima da imagem */
-  height: auto; /* Mantém a proporção da imagem */
+  height: 500px; /* Mantém a proporção da imagem */
 }
