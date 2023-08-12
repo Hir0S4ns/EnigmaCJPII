@@ -19,8 +19,8 @@ body {
 }
 
 #intro-container img, #phase-image {
-  width: 800px;
-  height: 400px;
+  width: 600px;
+  height: 300px;
   object-fit: center;
   margin-bottom: 20px;
 }
