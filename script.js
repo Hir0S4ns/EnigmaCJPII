@@ -27,22 +27,22 @@ const answers = [
 ];
 
 const phaseImages = [
-  "imagens/291.png",
-  "imagens/quinta-feira.png",
-  "imagens/piramide.png",
-  "imagens/ferro.png",
-  "imagens/video game.png",
-  "imagens/6.png",
-  "imagens/nokia.png",
-  "imagens/musica.png",
-  "imagens/agosto.png",
-  "imagens/3patos.png",
-  "imagens/sudoku fake.png",
-  "imagens/esquerda.png",
-  "imagens/penultimo.png",
-  "imagens/arco-iris.png",
-  "imagens/relógios.png",
-  "imagens/epihau.png",
+  "imagens/fase 1.png",
+  "imagens/fase 2.png",
+  "imagens/fase 3.png",
+  "imagens/fase 4.png",
+  "imagens/fase 5.png",
+  "imagens/bobo.png",
+  "imagens/fase 7.png",
+  "imagens/fase 8.png",
+  "imagens/fase 9.png",
+  "imagens/fase 10.png",
+  "imagens/fase 11.png",
+  "imagens/fase 12.png",
+  "imagens/fase 13.png",
+  "imagens/fase 14.png",
+  "imagens/fase 15.png",
+  "imagens/fase 16.png",
   "imagens/parabéns.png"
 ];
 
