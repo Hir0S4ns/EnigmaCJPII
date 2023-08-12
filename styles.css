@@ -18,9 +18,9 @@ body {
   flex-direction: column;
 }
 
-#intro-container img, #phase-image {
-  width: 600px;
-  height: 300px;
+#intro-container img {
+  width: auto;
+  height: auto;
   object-fit: center;
   margin-bottom: 20px;
 }
@@ -95,4 +95,10 @@ input[type="text"] {
 #conclusion-image {
   width: 500px; /* Ajuste conforme necessário */
   height: auto; /* Mantém a proporção original */
+}
+
+/* No seu arquivo styles.css */
+#phase-image {
+  max-width: 100%; /* Ajusta a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
 }
