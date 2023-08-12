@@ -1,0 +1,104 @@
+body {
+  background-color: black;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#intro-container, #game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#intro-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro-container img {
+  width: 100px;
+  height: 100px;
+  object-fit: auto;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 14px 28px; /* Aumente o tamanho dos botões */
+  font-size: 18px; /* Aumente o tamanho da fonte dos botões */
+  cursor: pointer;
+  background-color: rgb(231, 14, 43); /* Cor de fundo vermelha */
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px; /* Espaço entre os botões */
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 20px; /* Aumente o tamanho da fonte da barra de resposta */
+  width: 40%; /* Faz a barra de resposta ocupar a largura disponível */
+  box-sizing: border-box;
+  margin-top: 10px; /* Espaço entre o texto e a barra de resposta */
+}
+
+#game-container {
+  display: none;
+}
+
+#logo-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: auto;
+  z-index: 1;
+  margin-top: 20px; /* Espaço entre o logo e o botão de resposta */
+}
+
+#response-text {
+  font-size: 18px; /* Ajuste o tamanho da fonte conforme necessário */
+  margin-top: 0px; /* Espaço entre o texto e a imagem */
+}
+
+#answer-button-container {
+ /* Estilos anteriores */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px; /* Espaço entre a caixa de resposta e o container do botão */
+}
+
+/* Novo estilo para esconder caixa de resposta e botão de resposta na última fase */
+#game-container.last-phase #answer-input,
+#game-container.last-phase #answer-button {
+    display: none;
+}
+/* Estilos anteriores */
+
+
+/* Estilo específico para a imagem da fase 11 */
+#phase-image.phase11 {
+  width: 600px; /* Largura desejada para a fase 11 */
+  height: auto;
+}
+
+/* Estilos para a imagem de conclusão */
+#conclusion-container {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#conclusion-image {
+  width: 500px; /* Ajuste conforme necessário */
+  height: auto; /* Mantém a proporção original */
+}
+
+/* No seu arquivo styles.css */
+#phase-image {
+  max-width: 100%; /* Ajusta a largura máxima da imagem */
+  height: auto; /* Mantém a proporção da imagem */
+}
